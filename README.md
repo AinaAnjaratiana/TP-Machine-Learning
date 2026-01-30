@@ -1,5 +1,5 @@
 ## Équipe
-- Nom de l’institut :ISPM : Institut Supérieur Polytechnique de Madagascar  
+- Nom de l’institut : ISPM (Institut Supérieur Polytechnique de Madagascar)
 - Site web : [www.ispm-edu.com](http://www.ispm-edu.com)
 
 ## Membres de l’équipe
@@ -30,6 +30,9 @@ Le workflow est le suivant :
 - Vectorisation du texte: `CountVectorizer` ou `TfidfVectorizer` pour transformer le texte en vecteurs
 - Classification: `Multinomial Naive Bayes` pour prédire si un message est un spam ou non.  
 - Évaluation du modèle: précision, rappel, F1-score (si tu fais des tests de validation).
+
+## Les datasets utilisés
+Nous avons créé notre propre Dataset (Dataset.csv)
 
 ## Le lien vers l’application web hébergée
 voici le lien : https://tp-machine-learning-3.onrender.com/

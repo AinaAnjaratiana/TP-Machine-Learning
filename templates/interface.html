@@ -7,21 +7,30 @@
 </head>
 <body>
 
-<div class="container">
-    <h1>Détection de SPAM SMS</h1>
+    <div class="background"></div>
 
-    <form method="POST">
-        <textarea name="message" placeholder="Entrez votre message ici..." required>{{ message }}</textarea>
-        <button type="submit">Analyser</button>
-    </form>
+    <div class="app">
+        <h1 class="title">Détection de SMS</h1>
+        <p class="subtitle">Analyse automatique SPAM / HAM </p>
 
-    {% if prediction %}
-        <div class="result {{ prediction }}">
-            <h2>Résultat : {{ prediction }}</h2>
-            <p>Score de confiance : {{ confiance }} %</p>
+        <div class="card">
+            <form method="POST">
+                <textarea name="message" placeholder=" Entrez votre message ici..." required>{{ message }}</textarea>
+                <button type="submit"> Analyser le message</button>
+            </form>
+
+            {% if prediction %}
+            <div class="result {{ prediction }}">
+                <h2>{{ prediction }}</h2>
+                <p>Detection : <strong>{{ confiance }} %</strong></p>
+            </div>
+            {% endif %}
         </div>
-    {% endif %}
-</div>
+
+        <footer>
+           Un SMS, un clic, la vérité
+        </footer>
+    </div>
 
 </body>
 </html>
